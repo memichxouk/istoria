@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация о Древнем Китае, его культуре, истории и наследии">
+    <title>Древний Китай</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="intro-text">
+            <h1 data-aos="fade-up">Древний Китай</h1>
+            <p data-aos="fade-up">Исследуйте одну из самых древних и великих цивилизаций мира — Древний Китай. Погрузитесь в его культуру, философию и достижения.</p>
+        </div>
+    </header>
+
+    <section>
+        <h2 data-aos="fade-up">Пять основ китайской культуры</h2>
+        <div class="five-pillars" data-aos="fade-up">
+            <div class="pillar" data-aos="fade-up" data-aos-delay="100">
+                <h3>Конфуцианство</h3>
+                <p>Конфуцианство было основой китайской философии, акцентируя внимание на морали, социальной гармонии и уважении к старшим.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="200">
+                <h3>Древнекитайское искусство</h3>
+                <p>Древний Китай славился своими достижениями в искусстве: каллиграфия, живопись, фарфор и другие ремесла.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="300">
+                <h3>Технологии</h3>
+                <p>Китайцы были пионерами в таких областях, как изобретение бумаги, пороха, компаса и печатного станка.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="400">
+                <h3>Архитектура</h3>
+                <p>Архитектура Древнего Китая включает в себя величественные пагоды, дворцы и стены, такие как Великая китайская стена.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="500">
+                <h3>Политическая система</h3>
+                <p>Древний Китай был известен своими централизованными империями, основанными на династиях и строгом управлении.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 data-aos="fade-up">Знаменитые личности Китая</h2>
+        <div class="famous-figures">
+            <div class="figure" data-aos="fade-up" data-aos-delay="100">
+                <h3>Цинь Шихуан</h3>
+                <p>Первый император Китая, который объединил страну и построил Великую китайскую стену, а также начал создание Терракотовой армии.</p>
+            </div>
+            <div class="figure" data-aos="fade-up" data-aos-delay="200">
+                <h3>Конфуций</h3>
+                <p>Великий философ, чьи идеи о морали и социальной гармонии оказали огромное влияние на китайскую культуру и мировую философию.</p>
+            </div>
+            <div class="figure" data-aos="fade-up" data-aos-delay="300">
+                <h3>Лао-Цзы</h3>
+                <p>Основатель даосизма, чьи учения повлияли на философию и религию Китая и других стран Востока.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта Китая -->
+    <section id="map-section">
+        <h2 data-aos="fade-up">Карта Древнего Китая</h2>
+        <div id="map" data-aos="fade-up"></div>
+    </section>
+
+    <!-- Таймлайн -->
+    <section>
+        <h2 data-aos="fade-up">Таймлайн событий Древнего Китая</h2>
+        <div class="timeline-container" data-aos="fade-up">
+            <div class="timeline-event">
+                <div class="timeline-date">221 г. до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Объединение Китая Цинь Шихуаном</h3>
+                    <p>Цинь Шихуан, первый император Китая, объединил Китай, создав централизованное государство.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">618 г. н. э.</div>
+                <div class="timeline-content">
+                    <h3>Династия Тан</h3>
+                    <p>Династия Тан считается одним из золотых веков Китая, с процветанием культуры, торговли и искусства.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">1368 г. н. э.</div>
+                <div class="timeline-content">
+                    <h3>Династия Мин</h3>
+                    <p>Династия Мин стала известна своими достижениями в строительстве Великой китайской стены и культурными достижениями.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">1644 г. н. э.</div>
+                <div class="timeline-content">
+                    <h3>Династия Цин</h3>
+                    <p>Династия Цин была последней императорской династией Китая, установившей свою власть после падения династии Мин.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="architecture" data-aos="fade-up">
+        <h2>Архитектура Китая</h2>
+        <p>Архитектура Китая представляет собой богатое наследие, с яркими примерами древнего и современного строительства. Китайские архитектурные памятники, такие как Великая Китайская стена, Забороненный город и храмы, являются знаковыми и исторически важными для мировой культуры.</p>
+    
+        <div class="architecture-gallery">
+            <div class="architecture-item">
+                <h3>Великая Китайская стена</h3>
+                <img src="https://knowhistory.ru/sites/default/files/styles/big/public/images/journal/3477-4086.jpg?itok=er5yvaHc" alt="Великая Китайская стена" class="architecture-image">
+                <p>Великая Китайская стена — это одно из самых известных чудес света, которое тянется на тысячи километров через северный Китай.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Запретный город</h3>
+                <img src="https://chinaved.com/storage/images/posts/Jul2023/K8ZMsSuVaQ.jpg" alt="Запретный город" class="architecture-image">
+                <p>Запретный город в Пекине был резиденцией императоров Китая и является примером величественной китайской архитектуры.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Храм Неба</h3>
+                <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/a4e9520d-07e5-4365-9d05-10d626675394/-/format/webp/-/resize/1300x/" alt="Храм Неба" class="architecture-image">
+                <p>Храм Неба в Пекине был построен для того, чтобы императоры Китая могли молиться за хороший урожай. Это архитектурное чудо сочетает в себе символику и инженерные достижения.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Храм Лонгву</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRv-BTKDwJ3gbHWESOGvnvt7nu793JG5bIFA&s" alt="Храм Лонгву" class="architecture-image">
+                <p>Храм Лонгву в китайской провинции Фуцзянь — это известное сооружение, олицетворяющее традиционные элементы китайской архитектуры.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>лунный Мост</h3>
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/1880383/pub_5fdf3d073713a37b8649067d_5fdf3d578ae4867dade3fb51/scale_1200" alt="Мост Лунтин" class="architecture-image">
+                <p>Лунный Мост — это пример древней китайской мостовой архитектуры, который соединяет города и земли.</p>
+            </div>
+        </div>
+    
+        <!-- Модальное окно для увеличенных изображений -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <p>&copy; 2024 Древний Китай | Все права защищены</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="/China/script.js">
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Инициализация карты Китая
+        var map = L.map('map').setView([35.8617, 104.1954], 5); // Координаты Китая
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([35.8617, 104.1954]).addTo(map)
+            .bindPopup('Китай — родина древней цивилизации')
+            .openPopup();
+    </script>
+</body>
+</html>

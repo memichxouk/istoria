@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация о Древнем Риме, его культуре, истории и знаменитых личностях">
+    <title>Древний Рим</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="intro-text">
+            <h1 data-aos="fade-up">Древний Рим</h1>
+            <p data-aos="fade-up">Погрузитесь в величие Римской империи, изучая её историю, культуру и наследие.</p>
+        </div>
+    </header>
+
+    <section>
+        <h2 data-aos="fade-up">Пять основ Римской культуры</h2>
+        <div class="five-pillars" data-aos="fade-up">
+            <div class="pillar" data-aos="fade-up" data-aos-delay="100">
+                <h3>Римская армия</h3>
+                <p>Армия Рима была основой его могущественного государства. Стратегии и дисциплина обеспечивали его победы в бесчисленных войнах.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="200">
+                <h3>Право</h3>
+                <p>Римское право стало основой многих современных правовых систем. Оно определяло, как должны регулироваться отношения между людьми и государством.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="300">
+                <h3>Инфраструктура</h3>
+                <p>Римляне построили выдающуюся инфраструктуру, включая дороги, акведуки, мосты и театры, что сделало Римскую империю образцом для подражания.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="400">
+                <h3>Религия</h3>
+                <p>Римская религия была основана на поклонении множеству богов, среди которых были Юпитер, Юнона и Минерва. Римляне считали, что благосклонность богов обеспечит процветание империи.</p>
+            </div>
+            <div class="pillar" data-aos="fade-up" data-aos-delay="500">
+                <h3>Архитектура</h3>
+                <p>Римляне внесли значительный вклад в архитектуру, создав такие чудеса, как Колизей, Пантеон и Римский форум.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 data-aos="fade-up">Знаменитые личности Рима</h2>
+        <div class="famous-figures">
+            <div class="figure" data-aos="fade-up" data-aos-delay="100">
+                <h3>Юлий Цезарь</h3>
+                <p>Великий полководец и политик, который стал первым диктатором Рима и изменил ход истории Римской империи.</p>
+            </div>
+            <div class="figure" data-aos="fade-up" data-aos-delay="200">
+                <h3>Октавиан Август</h3>
+                <p>Первый римский император, который заложил основы Римской империи после падения Римской республики.</p>
+            </div>
+            <div class="figure" data-aos="fade-up" data-aos-delay="300">
+                <h3>Цицерон</h3>
+                <p>Великий оратор, философ и политик, который сыграл ключевую роль в истории Рима в последние годы республики.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта Рима -->
+    <section id="map-section">
+        <h2 data-aos="fade-up">Карта Древнего Рима</h2>
+        <div id="map" data-aos="fade-up"></div>
+    </section>
+
+    <!-- Таймлайн -->
+    <section>
+        <h2 data-aos="fade-up">Таймлайн событий Древнего Рима</h2>
+        <div class="timeline-container" data-aos="fade-up">
+            <div class="timeline-event">
+                <div class="timeline-date">509 г. до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Основание Римской Республики</h3>
+                    <p>Рим стал республикой после свержения царя Тарквиния Гордого.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">27 г. до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Начало правления Октавиана Августа</h3>
+                    <p>Октавиан Август становится первым императором Рима, положив конец Римской Республике.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">79 г. н. э.</div>
+                <div class="timeline-content">
+                    <h3>Извержение Везувия</h3>
+                    <p>Извержение вулкана Везувий уничтожило города Помпеи и Геркуланум, оставив их в состоянии, сохранившем многие аспекты римской жизни.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">212 г. н. э.</div>
+                <div class="timeline-content">
+                    <h3>Эдикт Каракаллы</h3>
+                    <p>Эдикт Каракаллы предоставил гражданство всем свободным жителям Римской империи.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">476 г. н. э.</div>
+                <div class="timeline-content">
+                    <h3>Падение Западной Римской империи</h3>
+                    <p>Западная Римская империя пала после нападения варваров, что стало концом Древнего Рима как империи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Архитектура Рима -->
+    <section id="architecture">
+        <h2 data-aos="fade-up">Архитектурные чудеса Рима</h2>
+        <div class="architecture-gallery" data-aos="fade-up">
+            <div class="architecture-item" data-aos="fade-up" data-aos-delay="100">
+                <h3>Колизей</h3>
+                <p>Колизей — один из самых знаменитых памятников Древнего Рима, использовавшийся для гладиаторских боев и массовых зрелищ.</p>
+                <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/583665dc-c63e-4d7e-bdc4-c80bfad7756a/-/format/webp/-/resize/1300x/" alt="Колизей" class="architecture-image">
+            </div>
+            <div class="architecture-item" data-aos="fade-up" data-aos-delay="200">
+                <h3>Пантеон</h3>
+                <p>Пантеон — храм, посвященный всем богам Рима, который до сих пор является одним из самых сохранившихся античных зданий.</p>
+                <img src="https://italiatut.com/wp-content/uploads/Pantheon-Roma.jpg" alt="Пантеон" class="architecture-image">
+            </div>
+            <div class="architecture-item" data-aos="fade-up" data-aos-delay="300">
+                <h3>Римский форум</h3>
+                <p>Римский форум — центральная площадь Рима, служившая местом для политической, религиозной и торговой жизни города.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyiiosghViK2XGpCsvlcAgteDBHXwadO_cqA&s" alt="Римский форум" class="architecture-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для увеличенных изображений -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Древний Рим | Все права защищены</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Инициализация карты Рима
+        var map = L.map('map').setView([41.9028, 12.4964], 13); // Координаты Рима
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([41.9028, 12.4964]).addTo(map)
+            .bindPopup('Рим, столица Древней Римской империи')
+            .openPopup();
+            // Получаем все изображения
+var images = document.querySelectorAll('.architecture-image');
+var modal = document.getElementById('imageModal');
+var modalImg = document.getElementById('modalImage');
+var captionText = document.getElementById('caption');
+var closeBtn = document.getElementsByClassName('close')[0];
+
+// Открытие модального окна при клике на изображение
+images.forEach(function(image) {
+    image.onclick = function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;  // Устанавливаем источник изображения в модальном окне
+        captionText.innerHTML = this.alt;  // Устанавливаем текст в подписях
+    }
+});
+
+// Закрытие модального окна
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+}
+    </script>
+</body>
+</html>

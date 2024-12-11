@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История Древнего Египта</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timelinejs/3.6.0/css/timeline.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="hero" data-aos="fade-in">
+        <div class="intro-text">
+            <h1>История Древнего Египта</h1>
+            <p>Погрузитесь в величие одной из самых известных цивилизаций мира, Древнего Египта.</p>
+        </div>
+    </header>
+
+    <section class="about" data-aos="fade-up">
+        <h2>О Древнем Египте</h2>
+        <p>Древний Египет — одна из величайших цивилизаций, существовавшая в долине Нила. Египтяне оставили огромный культурный след: от пирамид до развитой письменности — они изменили историю.</p>
+    </section>
+
+    <!-- Таймлайн Древнего Египта -->
+    <section class="timeline" data-aos="fade-up">
+        <h2>Таймлайн Древнего Египта</h2>
+        <div class="timeline-container">
+            <div class="timeline-event">
+                <div class="timeline-date">3100 год до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Единение Верхнего и Нижнего Египта</h3>
+                    <p>Царь Менес объединил Верхний и Нижний Египет, став первым фараоном.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">2600 год до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Строительство Великой пирамиды в Гизе</h3>
+                    <p>Во времена фараона Хеопса была построена Великая пирамида — одно из семи чудес света.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">1500 год до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Рамсес II и расцвет Египта</h3>
+                    <p>При фараоне Рамсесе II Египет достиг своего апогея, став мощной военной и культурной державой.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">332 год до н. э.</div>
+                <div class="timeline-content">
+                    <h3>Покорение Египта Александром Македонским</h3>
+                    <p>Египет был завоеван Александром Великим, что положило конец династии фараонов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="five-pillars">
+        <h2>Ключевые аспекты культуры Египта</h2>
+        <div class="pillar">
+            <h3>Пирамиды</h3>
+            <p>Пирамиды, как могилы для фараонов, являются символом могущества и долговечности Египта.</p>
+        </div>
+        <div class="pillar">
+            <h3>Боги Египта</h3>
+            <p>Древние египтяне почитали многочисленных богов, таких как Ра, Осирис и Исида.</p>
+        </div>
+        <div class="pillar">
+            <h3>Письменность</h3>
+            <p>Египтяне изобрели иероглифы — систему письма, которая использовалась для записи истории и ритуалов.</p>
+        </div>
+        <div class="pillar">
+            <h3>Фараоны</h3>
+            <p>Фараоны были божественными правителями, объединявшими власть, религию и культуру Египта.</p>
+        </div>
+        <div class="pillar">
+            <h3>Нил</h3>
+            <p>Река Нил играла важнейшую роль в жизни Египта, обеспечивая плодородные земли для сельского хозяйства.</p>
+        </div>
+    </section>
+
+    <!-- Интерактивная карта -->
+    <section class="map" data-aos="fade-up">
+        <h2>Карта Египта</h2>
+        <div id="map" style="height: 500px;"></div>
+    </section>
+
+    <!-- Раздел про знаменитых личностей -->
+    <section class="famous-figures" data-aos="fade-up">
+        <h2>Знаменитые личности Древнего Египта</h2>
+        <div class="figure">
+            <h3>Тутанхамон</h3>
+            <p>Тутанхамон (около 1341–1323 гг. до н. э.) — фараон, чья гробница в Вади-эль-Барша стала одной из самых известных археологических находок.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Рамсес II</h3>
+            <p>Рамсес II (около 1303–1213 гг. до н. э.) — один из самых могущественных фараонов Египта, известный своими военными победами и строительными проектами.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Клеопатра</h3>
+            <p>Клеопатра VII (69–30 гг. до н. э.) — последняя фараонша Египта, известная своей политической мудростью и романом с Юлием Цезарем.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Хеопс</h3>
+            <p>Хеопс (около 2589–2566 гг. до н. э.) — фараон, при котором была построена Великая пирамида в Гизе.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Имхотеп</h3>
+            <p>Имхотеп (около 2650–2600 гг. до н. э.) — визирь фараона Джосера, архитектор Ступенчатой пирамиды и признанный бог медицины.</p>
+        </div>
+    </section>
+    <section class="architecture" data-aos="fade-up">
+        <h2>Архитектура Египта</h2>
+        <p>Архитектура Египта славится своими древними памятниками, включая пирамиды, храмы и гробницы, которые являются свидетельством уникальных инженерных решений и религиозных убеждений египтян. Эти сооружения до сих пор вдохновляют и поражают своей масштабностью и точностью.</p>
+    
+        <div class="architecture-gallery">
+            <div class="architecture-item">
+                <h3>Пирамиды Гизы</h3>
+                <img src="https://cdn.tripster.ru/thumbs2/ffc2e4de-4874-11ed-8d1f-e2406ee26240.1220x600.jpeg" alt="Пирамиды Гизы" class="architecture-image">
+                <p>Пирамиды Гизы — это одни из самых известных и древних архитектурных памятников Египта, которые служат гробницами для фараонов. Они построены более 4,500 лет назад.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Храм Карнака</h3>
+                <img src="https://fs.tonkosti.ru/d2/xw/d2xw1suicx4ocokkk4s8cwk8o.jpg" alt="Храм Карнака" class="architecture-image">
+                <p>Храм Карнака в Луксоре — это один из крупнейших религиозных комплексов в Египте, построенный в честь бога Амона. Он является археологическим чудом древнего Египта.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Храм Луксора</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJShypHPOzcWVH8XmS4OOnWlFi6hwf-4DdA&s" alt="Храм Луксора" class="architecture-image">
+                <p>Храм Луксора — это храмовый комплекс на восточном берегу Нила, посвященный богам Амону, Мут и Хонсу. Это один из самых важных памятников египетской архитектуры.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Долина царей</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvA7o4s7IB5M1Dyk7Qd5PhT5RTTjET8PNAgQ&s" alt="Долина царей" class="architecture-image">
+                <p>Долина царей в Египте — это место захоронения фараонов Нового царства. В этой долине находится множество гробниц, включая гробницу Тутанхамона.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Храм Абу Симбела</h3>
+                <img src="https://ethnomir.ru/upload/medialibrary/e44/egypt1.jpg" alt="Храм Абу Симбела" class="architecture-image">
+                <p>Храм Абу Симбела, вырезанный в скале, был построен фараоном Рамзесом II в 13 веке до н.э. Это одно из самых впечатляющих сооружений Египта.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Модальное окно для увеличенных изображений -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <p>© 2024 История Древнего Египта | Все права защищены</p>
+    </footer>
+
+    <script src="Egipet/script.js">
+        
+    </script>
+</body>
+</html>

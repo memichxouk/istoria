@@ -1,0 +1,399 @@
+/* Основные стили для всего сайта */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f0; /* Очень светлый бежевый фон */
+    color: #4e4b47; /* Темно-бежевый текст */
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Хедер с фоном и текстом */
+header.hero {
+    background-color: #e1cfc2; /* Бежевый с оттенками коричневого */
+    background-image: url('https://example.com/your-image.jpg'); /* Замените на ссылку на изображение */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+header .intro-text h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #f5f5f0; /* Очень светлый бежевый для контраста */
+}
+
+header .intro-text p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #4e4b47; /* Темно-бежевый для текста */
+}
+
+/* Общее оформление для разделов */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f7f3e6; /* Мягкий бежевый фон для секций */
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.8em;
+    color: #c8ad7f; /* Бежевый с золотыми оттенками */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Стили для параграфов */
+section p {
+    font-size: 1.2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #4e4b47; /* Темно-бежевый */
+    line-height: 1.8;
+}
+
+/* Таймлайн */
+section.timeline {
+    background-color: #f5e0c3; /* Легкий желтовато-бежевый фон для таймлайна */
+    background-image: url('https://example.com/timeline-image.jpg'); /* Изображение для таймлайна */
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-event {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-date {
+    font-size: 1.6em;
+    color: #c8ad7f; /* Золотисто-бежевый цвет */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.timeline-content h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #4e4b47; /* Темно-бежевый */
+}
+
+.timeline-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Стиль для карты */
+section.map {
+    background-color: #f5e0c3; /* Легкий желтовато-бежевый фон */
+    background-image: url('https://example.com/map-background.jpg'); /* Изображение для карты */
+    background-size: cover;
+    background-position: center;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Знаменитые личности */
+section.famous-figures {
+    background-color: #f7f3e6; /* Мягкий бежевый */
+    padding: 60px 20px;
+    background-image: url('https://example.com/figures-background.jpg'); /* Фон для знаменитых личностей */
+    background-size: cover;
+    background-position: center;
+}
+
+section.famous-figures .figure {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.famous-figures .figure:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+section.famous-figures .figure h3 {
+    font-size: 2.4em;
+    color: #c8ad7f; /* Золотисто-бежевый */
+    margin-bottom: 10px;
+}
+
+section.famous-figures .figure p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #4e4b47;
+}
+
+/* Стиль для слайдера */
+.slick-slider {
+    margin-top: 40px;
+}
+
+.slick-slide {
+    padding: 10px;
+    text-align: center;
+}
+
+.slick-prev, .slick-next {
+    font-size: 2em;
+    color: #c8ad7f;
+}
+
+/* Кнопки */
+button {
+    background-color: #c8ad7f; /* Золотисто-бежевый */
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #a68a60; /* Более темный бежевый оттенок */
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Стили для ссылок */
+a {
+    color: #c8ad7f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #a68a60;
+    text-decoration: underline;
+}
+
+/* Анимации */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Мобильная адаптация */
+@media screen and (max-width: 768px) {
+    header.hero {
+        padding: 60px 0;
+    }
+
+    header .intro-text h1 {
+        font-size: 2.5em;
+    }
+
+    section.about p,
+    section.famous-figures .figure p {
+        font-size: 1.1em;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+    }
+
+    .timeline-event {
+        padding: 20px;
+    }
+}
+
+/* Пять столпов ислама */
+section.five-pillars {
+    background-color: #f7f3e6; /* Мягкий бежевый фон для столпов */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.five-pillars h2 {
+    font-size: 2.8em;
+    color: #c8ad7f; /* Золотисто-бежевый */
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.five-pillars .pillar {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.five-pillars .pillar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.five-pillars .pillar h3 {
+    font-size: 1.8em;
+    color: #4e4b47; /* Темно-бежевый */
+    margin-bottom: 10px;
+}
+
+.five-pillars .pillar p {
+    font-size: 1.2em;
+    color: #4e4b47;
+    line-height: 1.6;
+}
+
+/* Архитектурный раздел */
+section.architecture {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f4e7; /* Светлый фон для раздела */
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section.architecture h2 {
+    font-size: 2.8em;
+    color: #c8ad7f; /* Золотисто-бежевый цвет */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.architecture p {
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #4e4b47; /* Темно-бежевый текст */
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Архитектурная галерея с горизонтальной прокруткой */
+.architecture-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center; /* Центрируем элементы внутри контейнера */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.architecture-item {
+    background-color: #fce1b300;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* чтобы элементы не сжимались */
+}
+
+.architecture-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.architecture-item:hover {
+    transform: scale(1.05);
+}
+
+.architecture-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.architecture-item p {
+    font-size: 1rem;
+}
+
+/* Модальное окно */
+.modal {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Черный фон с прозрачностью */
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История Ислама</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timelinejs/3.6.0/css/timeline.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="hero" data-aos="fade-in">
+        <div class="intro-text">
+            <h1>История Ислама</h1>
+            <p>Погрузитесь в богатую историю и культуру одного из крупнейших мировых религиозных течений.</p>
+        </div>
+    </header>
+
+    <section class="about" data-aos="fade-up">
+        <h2>О Исламе</h2>
+        <p>Ислам — это монотеистическая религия, основанная на учении пророка Мухаммеда, который получил откровения от Аллаха, записанные в священной книге Коран. Ислам считается одной из трех авраамических религий, наряду с иудаизмом и христианством.</p>
+    </section>
+
+    <!-- Таймлайн Ислама -->
+    <section class="timeline" data-aos="fade-up">
+        <h2>Таймлайн Ислама</h2>
+        <div class="timeline-container">
+            <div class="timeline-event">
+                <div class="timeline-date">610 год н. э.</div>
+                <div class="timeline-content">
+                    <h3>Начало откровений пророка Мухаммеда</h3>
+                    <p>Пророк Мухаммед получил первое откровение от Аллаха в пещере Хира. Это событие положило начало исламу.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">622 год н. э.</div>
+                <div class="timeline-content">
+                    <h3>Хиджра</h3>
+                    <p>Мухаммед и его последователи переселились из Мекки в Медину, что стало началом мусульманского летоисчисления.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">630 год н. э.</div>
+                <div class="timeline-content">
+                    <h3>Завоевание Мекки</h3>
+                    <p>Мухаммед вернулся в Мекку с армией и взял город под контроль, установив ислам как основную религию.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-date">661 год н. э.</div>
+                <div class="timeline-content">
+                    <h3>Убийство имама Али</h3>
+                    <p>Имам Али, четвертый праведный халиф, был убит, что привело к расколу в исламе и образованию шиитской и суннитской ветвей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="five-pillars">
+        <h2>Пять столпов ислама</h2>
+        <div class="pillar">
+            <h3>Шахада</h3>
+            <p>Свидетельство, что нет бога, кроме Аллаха, и Мухаммад — Его пророк.</p>
+        </div>
+        <div class="pillar">
+            <h3>Салат</h3>
+            <p>Пятикратная молитва, обязательная для мусульман.</p>
+        </div>
+        <div class="pillar">
+            <h3>Закят</h3>
+            <p>Обязательное пожертвование бедным и нуждающимся.</p>
+        </div>
+        <div class="pillar">
+            <h3>Саум</h3>
+            <p>Пост в месяц Рамадан — отказ от еды и питья от рассвета до заката.</p>
+        </div>
+        <div class="pillar">
+            <h3>Хадж</h3>
+            <p>Паломничество в Мекку хотя бы раз в жизни, если есть возможность.</p>
+        </div>
+    </section>
+    
+
+    <!-- Интерактивная карта -->
+    <section class="map" data-aos="fade-up">
+        <h2>Карта Ислама</h2>
+        <div id="map" style="height: 500px;"></div>
+    </section>
+
+    <!-- Раздел про знаменитых личностей -->
+    <section class="famous-figures" data-aos="fade-up">
+        <h2>Знаменитые личности Ислама</h2>
+        <div class="figure">
+            <h3>Пророк Мухаммед</h3>
+            <p>Мухаммед (570–632 гг. н. э.) — последний пророк ислама, который стал основателем религии и получил откровения, записанные в Коране.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Имам Али</h3>
+            <p>Имам Али (600–661 гг. н. э.) — четвертый праведный халиф и основатель шиитского ислама. Он был близким родственником Мухаммеда и его первым мужчиной в вере.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Абу Бакр</h3>
+            <p>Абу Бакр (573–634 гг. н. э.) — первый халиф после смерти пророка Мухаммеда и один из его ближайших сподвижников.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Имам Хусейн</h3>
+            <p>Имам Хусейн (626–680 гг. н. э.) — внук пророка Мухаммеда, ставший мучеником в битве при Кербеле, символом борьбы за справедливость в исламе.</p>
+        </div>
+
+        <div class="figure">
+            <h3>Ибн Сина (Авиценна)</h3>
+            <p>Ибн Сина (980–1037 гг.) — великий исламский ученый, врач и философ, оказавший влияние на развитие медицины и философии в исламском мире и за его пределами.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 История Ислама | Все права защищены</p>
+    </footer>
+
+    <section class="architecture" data-aos="fade-up">
+        <h2>Архитектура Ислама</h2>
+        <p>Исламская архитектура включает в себя разнообразие стилей, форм и элементов, которые развивались в различных странах и регионах, где существовали мусульманские общества. Эти здания часто отличались величественностью и функциональностью.</p>
+    
+        <div class="architecture-gallery">
+            <div class="architecture-item">
+                <h3>Мечеть Аль-Харам</h3>
+                <img src="https://farm4.staticflickr.com/3365/3454868215_34da6a55fb_z.jpg?zz=1" alt="Мечеть Аль-Харам" class="architecture-image">
+                <p>Мечеть Аль-Харам в Мекке — одна из самых священных мечетей для мусульман, она окружает Каабу, к которой направляются молитвы мусульман по всему миру.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Мечеть Султана Ахмета</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSQlNASANqf11pMr2RsgNpmXDHqzVMuTVq-g&s" alt="Мечеть Султана Ахмета" class="architecture-image">
+                <p>Мечеть Султана Ахмета в Стамбуле, известная как Голубая мечеть, является выдающимся примером османской архитектуры, с её величественными минаретами и красивыми интерьерами.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Джамия Аль-Азхар</h3>
+                <img src="https://lh6.googleusercontent.com/proxy/9Y268RZyL6cgEFUBgTmHZWj4r7SBtNIlZpxSxVPb3kb1_vnfs6Eo0f10rrtt181O5WPmuAqBI4huKhoJAJGa5UKsAFkiGnsHJLjY8UeQ8HwUbb05KgZL2-tO1649hyP0CsVQehrd" alt="Джамия Аль-Азхар" class="architecture-image">
+                <p>Джамия Аль-Азхар в Каире является одним из старейших учебных заведений и важнейших религиозных центров ислама.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Мечеть Куба</h3>
+                <img src="https://islam.ru/sites/default/files/img/2017/kultura/mechet-kuba2.jpg" alt="Мечеть Куба" class="architecture-image">
+                <p>Мечеть Куба в Медине считается первой мечетью, построенной в истории ислама. Она играет важную роль в истории мусульман и является священным местом для паломников.</p>
+            </div>
+    
+            <div class="architecture-item">
+                <h3>Дворец Альхамбра</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfSyvjKKEjqjKqU_LYqIJx7dRKuY4qKO4BQw&s" alt="Дворец Альхамбра" class="architecture-image">
+                <p>Дворец Альхамбра в Испании является выдающимся примером мавританской архитектуры и искусства, с его сложными орнаментами и историческими значениями.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script >
+        // Инициализация AOS для анимации
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Инициализация карты
+        var map = L.map('map').setView([21.4225, 39.8262], 13); // Центр карты: Мекка, Саудовская Аравия
+
+        // Добавление tile layer (слой карты)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Добавление маркеров на карту
+        var marker1 = L.marker([21.4225, 39.8262]).addTo(map); // Мекка
+        marker1.bindPopup("<b>Мекка</b><br>Священный город для мусульман, место рождения пророка Мухаммеда и местонахождение Каабы.");
+
+        var marker2 = L.marker([31.9686, 35.2075]).addTo(map); // Медина
+        marker2.bindPopup("<b>Медина</b><br>Город, куда пророк Мухаммед переселился в 622 году, начало мусульманского летоисчисления.");
+
+        var marker3 = L.marker([32.0176, 35.2102]).addTo(map); // Бадр
+        marker3.bindPopup("<b>Бадр</b><br>Место знаменитой битвы при Бадре, важнейшего сражения в истории ислама.");
+
+        // Инициализация слайдера
+        $('.slider').slick({
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 800
+        });
+
+        // Получаем все изображения
+var images = document.querySelectorAll('.architecture-image');
+var modal = document.getElementById('imageModal');
+var modalImg = document.getElementById('modalImage');
+var captionText = document.getElementById('caption');
+var closeBtn = document.getElementsByClassName('close')[0];
+
+// Открытие модального окна при клике на изображение
+images.forEach(function(image) {
+    image.onclick = function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;  // Устанавливаем источник изображения в модальном окне
+        captionText.innerHTML = this.alt;  // Устанавливаем текст в подписях
+    }
+});
+
+// Закрытие модального окна
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+/* Основные стили для всего сайта */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6d2; /* Песочный фон */
+    color: #5c4e38; /* Тёмно-коричневый текст */
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Хедер с фоном и текстом */
+header.hero {
+    background-color: #d2b58b; /* Песочный оттенок */
+    background-image: url('https://example.com/egypt-hero-image.jpg'); /* Замените на изображение с темой Египта */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+header .intro-text h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #f5f5f0; /* Светлый оттенок для контраста */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.3s;
+}
+
+header .intro-text p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #5c4e38; /* Тёмно-коричневый текст */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.6s;
+}
+
+/* Общее оформление для разделов */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f4e1c3; /* Тёплый песочный фон */
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+section h2 {
+    font-size: 2.8em;
+    color: #c99a6f; /* Золотисто-коричневый */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.3s;
+}
+
+/* Пять аспектов египетской культуры */
+.five-pillars {
+    background-color: #f7e3d3; /* Светлый песочный фон */
+    padding: 60px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.4s;
+}
+
+.five-pillars h2 {
+    font-size: 2.8em;
+    color: #c99a6f;
+    margin-bottom: 30px;
+}
+
+/* Стили для каждой "опоры" */
+.five-pillars .pillar {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.6s;
+}
+
+.five-pillars .pillar h3 {
+    font-size: 1.8em;
+    color: #5c4e38;
+    margin-bottom: 10px;
+}
+
+.five-pillars .pillar p {
+    font-size: 1.2em;
+}
+
+/* Таймлайн */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.6s;
+}
+
+.timeline-event {
+    background-color: #d8d0b4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.timeline-date {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #4b4b2f;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-size: 2em;
+    color: #4b4b2f;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1.2em;
+    color: #5c4e38;
+}
+
+/* Стиль карты */
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.8s;
+}
+
+/* Стили для знаменитых личностей */
+.famous-figures .figure {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    background-color: #fff7f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+.famous-figures .figure h3 {
+    font-size: 1.8em;
+    color: #5c4e38;
+    margin-bottom: 10px;
+}
+
+.famous-figures .figure p {
+    font-size: 1.2em;
+    color: #5c4e38;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #d2b58b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 1s;
+}
+
+footer.footer p {
+    margin: 0;
+}
+
+/* Анимация появления */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Архитектурный раздел */
+section.architecture {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f4e3; /* Светлый цвет для фона */
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section.architecture h2 {
+    font-size: 2.8em;
+    color: #ff6600; /* Оранжевый цвет */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.architecture p {
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #5a4e32; /* Темно-коричневый текст */
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Архитектурная галерея с горизонтальной прокруткой */
+.architecture-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.architecture-item {
+    background-color: #fff;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* чтобы элементы не сжимались */
+}
+
+.architecture-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.architecture-item:hover {
+    transform: scale(1.05);
+}
+
+.architecture-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.architecture-item p {
+    font-size: 1rem;
+}
+
+/* Модальное окно */
+.modal {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Черный фон с прозрачностью */
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
